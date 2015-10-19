@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Students
+  a(href='/add-student')
+  ul
+  if students
+    each student in students
+      li
+        a(href='/student/' + student._id) #{student.name}
+        span #{student.phone}

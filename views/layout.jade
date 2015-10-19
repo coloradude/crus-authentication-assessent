@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='/javascripts/app.js')
+  body
+    a(href='/log-out') Log out
+    a(href='/log-in') Log in
+    a(href='/register') Register
+    a(href='/student-list') Student List
+    block content
